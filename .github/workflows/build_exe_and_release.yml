@@ -24,7 +24,7 @@ jobs:
       - name: Build EXE
         run: pyinstaller --onefile search_excel_files.py          
       - name: Move Executable
-        run: move dist/search_excel_files.exe search_excel_files.exe
+        run: move dist/search_excel_files.exe CECIL.exe
       - name: Create Release
         id: create_release
         uses: actions/create-release@v1
